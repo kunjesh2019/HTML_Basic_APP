@@ -1,0 +1,42 @@
+.highlight {
+  background-color: #ee3;
+}
+
+.padding {
+  background-color: lightblue;
+  background: url(./images/mslogo.jpeg) no-repeat 95% 95%;
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-bottom: 200px;
+  padding-left: 30px;
+  background-position: center center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+#img2 {
+  float: center;
+}
