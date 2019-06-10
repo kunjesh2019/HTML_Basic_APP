@@ -2,15 +2,35 @@
   background-color: #ee3;
 }
 
+
 .padding {
+ 
   background-color: lightblue;
-  background: url(./images/mslogo.jpeg) no-repeat 95% 95%;
+  background:url(./images/mslogo.jpeg)  no-repeat 95% 95%;
   padding-top: 30px;
   padding-right: 50px;
   padding-bottom: 200px;
   padding-left: 30px;
-  background-position: center center;
+  background-position:center center
 }
+
+
+/*
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}*/
+
+
+.img-container{
+
+float:left;
+width:33.33%;
+padding:5px;
+
+}
+
 
 ul {
   list-style-type: none;
@@ -37,6 +57,73 @@ li a:hover {
   background-color: #111;
 }
 
-#img2 {
-  float: center;
+
+* {
+  box-sizing: border-box;
 }
+
+
+// Button style sheet
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin:right : 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  z-index:999;
+    
+    margin:10 300 -20 200;
+    margin-left:60px;
+    width:181px;
+    border-radius:20px;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
